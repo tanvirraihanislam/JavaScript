@@ -1,0 +1,64 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .canvas {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  
+  /* Styles for the color buttons */
+  .button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #grey {
+    background-color: grey;
+  }
+  
+  #white {
+    background-color: white;
+    border: 1px solid #ccc;
+  }
+  
+  #blue {
+    background-color: blue;
+  }
+  
+  #yellow {
+    background-color: yellow;
+  }
+  
