@@ -49,3 +49,10 @@ let addDivTest = document.createTextNode("test div");
 divTest.appendChild(addDivTest);
 
 document.body.appendChild(divTest);
+
+document.getElementById("eventTest").addEventListener("click", function (e) {
+  console.log(e);
+});
+
+console.log(document.getElementById("001"));
+console.log(document.getElementById("001"));
