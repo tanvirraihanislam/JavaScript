@@ -55,3 +55,5 @@ document.getElementById("eventTest").addEventListener("click", function (e) {
 });
 
 console.log(document.getElementById("001"));
+
+console.log(document.getElementById("001"));
