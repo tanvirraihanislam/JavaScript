@@ -15,3 +15,6 @@ function loginUsername(username) {
   return `${username} has logged in`;
 }
 console.log(loginUsername("tun"));
+
+let add = (a, b) => a + b;
+console.log(add(3, 2));
