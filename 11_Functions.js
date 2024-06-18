@@ -18,3 +18,14 @@ console.log(loginUsername("tun"));
 
 let add = (a, b) => a + b;
 console.log(add(3, 2));
+
+// Function Expression
+const add2 = function (a, b) {
+  console.log(a + b);
+};
+add2(2, 3);
+
+function add(a, b) {
+  console.log(a + b);
+}
+add(2, 3);
