@@ -31,3 +31,5 @@ function add3(a, b) {
   console.log(a + b);
 }
 add3(2, 3);
+
+console.log("test");
