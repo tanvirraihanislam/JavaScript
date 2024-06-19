@@ -17,8 +17,8 @@ function loginUsername(username) {
 console.log(loginUsername("tun"));
 
 //arrow function
-let add = (a, b) => a + b;
-console.log(add(3, 2));
+let add4 = (a, b) => a + b;
+console.log(add4(3, 2));
 
 // Function Expression
 const add2 = function (a, b) {
@@ -33,3 +33,16 @@ function add3(a, b) {
 add3(2, 3);
 
 console.log("test");
+
+let GOOGLE_URL = "https://jsonplaceholder.typicode.com/users/1";
+let functions_response = fetch(GOOGLE_URL);
+
+console.log(functions_response);
+
+fetch("https://jsonplaceholder.typicode.com/users/1")
+  .then((response) => {
+    console.log(response);
+    console.log("json: ", response.json);
+    return response.json();
+  })
+  .then((parameter) => console.log(parameter));
