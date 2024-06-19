@@ -45,4 +45,8 @@ fetch("https://jsonplaceholder.typicode.com/users/1")
     console.log("json: ", response.json);
     return response.json();
   })
-  .then((parameter) => console.log(parameter));
+  .then((parameter) => {
+    console.log(parameter);
+    return parameter.name;
+  })
+  .then((name) => console.log(name));
