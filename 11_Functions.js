@@ -16,6 +16,7 @@ function loginUsername(username) {
 }
 console.log(loginUsername("tun"));
 
+//arrow function
 let add = (a, b) => a + b;
 console.log(add(3, 2));
 
@@ -25,7 +26,8 @@ const add2 = function (a, b) {
 };
 add2(2, 3);
 
-function add(a, b) {
+//declaration
+function add3(a, b) {
   console.log(a + b);
 }
-add(2, 3);
+add3(2, 3);
