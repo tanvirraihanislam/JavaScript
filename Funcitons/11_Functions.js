@@ -39,7 +39,7 @@ let functions_response = fetch(GOOGLE_URL);
 
 console.log(functions_response);
 
-fetch("https://jsonplaceholder.typicode.com/users/1")
+let result123 = fetch("https://jsonplaceholder.typicode.com/users/1")
   .then((response) => {
     console.log(response);
     console.log("json: ", response.json);
@@ -49,4 +49,9 @@ fetch("https://jsonplaceholder.typicode.com/users/1")
     console.log(parameter);
     return parameter.name;
   })
-  .then((name) => console.log(name));
+  .then((name) => {
+    console.log(name);
+    return name;
+  });
+
+console.log("result123: ", result123);
