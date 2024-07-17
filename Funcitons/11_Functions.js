@@ -55,3 +55,28 @@ let result123 = fetch("https://jsonplaceholder.typicode.com/users/1")
   });
 
 console.log("result123: ", result123);
+
+let cart = ["apple", "banana", "orange"];
+let promise = createOrder(cart);
+promise.then(function (orderId) {
+  console.log(orderId);
+});
+function createOrder(cart) {
+  const pr = new Promise(function (resolve, reject) {
+    if (!validateCart(cart)) {
+      const err = new Error("cart is not valid");
+      reject(err);
+    }
+    const orderId = 12345;
+    if (orderId) {
+      resolve(orderId);
+    }
+  });
+  return pr;
+}
+
+function validateCart(cart) {
+  return true;
+}
+
+console.log("test 23 June");
